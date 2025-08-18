@@ -1,0 +1,219 @@
+/* Made by 387 News, 2025 */
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+  --bg-color: #121212;
+  --card-color: #1e1e1e;
+  --text-color: #ffffff;
+  --accent-color: #4f46e5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Header */
+
+header {
+  padding: 1rem 2rem;
+  background-color: var(--card-color);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+  
+.header-left {
+  font-size: 1.5rem;
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+.header-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Themes */
+
+body.light {
+  --bg-color: #ffd885;
+  --card-color: #ffedae;
+  --text-color: #000000;
+  --accent-color: #000000;
+}
+  
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--accent-color);
+  margin-left: 1rem;
+}
+
+/* Chat button */
+
+.help-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+  
+.help-button:hover {
+  background-color: #3730a3;
+}
+
+/* Footer */
+
+.footer-div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  z-index: -10;
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+  background-color: var(--card-color);
+  text-align: center;
+}
+  
+.footer-div a {
+  text-decoration: none;
+  color: var(--accent-color)
+}
+
+/* Adverticement */
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: var(--card-color);
+  color: var(--text-color);
+  padding: 24px;
+  border-radius: 12px;
+  width: 70%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.modal-header {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 20px;
+}
+
+.close-timer {
+  cursor: default;
+  font-weight: bold;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.subscribe-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.subscribe-btn:hover {
+  background-color: #3730a3;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background: #ccc;
+}
+
+/* Cards */
+
+.card {
+  background-color: var(--card-color);
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid var(--accent-color);
+  border-radius: 12px;
+}
+
+.card a {
+  color: var(--accent-color);
+}
